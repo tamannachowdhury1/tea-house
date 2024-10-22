@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d60fa185e5.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'all-black': '#000000',
+                        'dark': '#777777',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div class="lg:w-[628px] space-y-5 -mt-25">
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-all-black leading-[1.20]">It's good<br>
+                        tea time at The <br>Tea
+                        House</h1>
 
+                    <p class="font-medium text-base text-dark ">
+                        Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn  bg-gradient-to-r from-[#FF8938] to-[#FF0000]">Explore More</button>
+                </div>
+                <div class="mt-10 lg:mt-28">
+                    <img src="images/banner.png" class="max-w-sm lg:max-w-lg lg:-ml-14 " />
+                    <div
+                        class="-mt-[66px] lg:-mt-[84px] -ml-6 lg:-ml-7 flex items-center gap-4  drop-shadow-lg bg-white p-5  w-[220px] lg:w-60 rounded-lg border-2">
+                        <i class="fa-solid fa-star text-[#FFC850] text-3xl"></i>
+                        <div>
+                            <h3 class="text-3xl font-extrabold text-all-black">5.00</h3>
+                            <p class="text-dark font-semibold lg:text-base text-xs">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
